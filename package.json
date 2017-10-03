@@ -1,0 +1,30 @@
+{
+  "name": "nativescript-dev-assets",
+  "version": "0.0.1",
+  "description": "Simple hook allowing you to sync static files into the assets folder inside your Android app.",
+  "scripts": {
+    "test": "cd demo && tns install ../ && tns prepare android",
+    "postinstall": "node postinstall.js",
+    "preuninstall": "node preuninstall.js"
+  },
+  "author": "rhanb",
+  "license": "MIT",
+  "dependencies": {
+    "async-each": "^1.0.1",
+    "nativescript-hook": "^0.2.1"
+  },
+  "nativescript": {
+    "hooks": [
+      {
+        "type": "before-prepare",
+        "script": "lib/after-prepare.js",
+        "inject": true
+      },
+      {
+        "type": "before-watch",
+        "script": "lib/after-prepare.js",
+        "inject": true
+      }
+    ]
+  }
+}
