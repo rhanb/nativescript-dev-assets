@@ -17,12 +17,7 @@
     "hooks": [
       {
         "type": "before-prepare",
-        "script": "lib/after-prepare.js",
-        "inject": true
-      },
-      {
-        "type": "before-watch",
-        "script": "lib/after-prepare.js",
+        "script": "lib/before-prepare.js",
         "inject": true
       }
     ]
