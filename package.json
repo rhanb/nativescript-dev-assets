@@ -7,13 +7,39 @@
     "postinstall": "node postinstall.js",
     "preuninstall": "node preuninstall.js"
   },
-  "author": "rhanb",
   "license": "MIT",
   "dependencies": {
     "async-each": "^1.0.1",
     "nativescript-hook": "^0.2.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rhanb/nativescript-dev-assets.git"
+  },
+  "author": {
+    "name": "rhanb",
+    "email": "aniel.jeanbaptiste@gmail.com"
+  },
+  "keywords": [
+    "NativeScript",
+    "Android",
+    "Hook",
+    "Assets",
+    "JavaScript"
+  ],
   "nativescript": {
+    "platforms": {
+      "android": "3.2.0",
+      "ios": "3.2.0"
+    },
+    "plugin": {
+      "nan": "true",
+      "pan": "true",
+      "core3": "true",
+      "vue": "true",
+      "webpack": "false",
+      "category": "Developer"
+    },
     "hooks": [
       {
         "type": "before-prepare",
