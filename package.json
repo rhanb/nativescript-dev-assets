@@ -1,6 +1,6 @@
 {
   "name": "nativescript-dev-assets",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple hook allowing you to sync static files into the assets folder inside your Android app.",
   "scripts": {
     "test": "cd demo && tns install ../ && tns prepare android",
